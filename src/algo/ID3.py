@@ -17,9 +17,6 @@ class ID3:
         if X.shape[1] == 0:
             return np.bincount(y).argmax()
 
-        # Calculate the entropy of the current dataset
-        entropy_before_split = self._entropy(y)
-
         # Calculate Information Gain for each feature
         best_feature = None
         best_threshold = None

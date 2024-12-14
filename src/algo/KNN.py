@@ -29,8 +29,9 @@ class KNN:
             raise ValueError(f"Unsupported metric: {self.metric}")
 
     def fit(self, X_train, y_train):
-        self.X_train = X_train
-        self.y_train = y_train
+        self.X_train = np.array(X_train)
+        self.y_train = np.array(y_train)
+        return "aaß"
 
     def predict(self, X_test):
         predictions = []
